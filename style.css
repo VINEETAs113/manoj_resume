@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #f8fafc;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color: #141515;
+    text-transform: uppercase;
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #0062cc;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 10px;
+}
+
+/* Header Styles */
+.header-bg {
+    background: linear-gradient(135deg, #101011, #0a0a0a);
+    padding: 50px 0;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 0;
+}
+
+.about-section p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.about-section ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.about-section ul li::before {
+    content: "✔";
+    color: #0062cc;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Skills Section */
+.skills-section ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.skills-section ul li {
+    margin: 5px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.skills-section ul li:hover {
+    background: #0062cc;
+    color: white;
+    border-color: #0062cc;
+    transform: translateY(-5px);
+}
+
+/* Education and Projects Section */
+.bg-light {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: bold;
+    color: #0062cc;
+}
+
+.card-body {
+    font-size: 1rem;
+    color: #555;
+}
+.skills-section h3 {
+  color: black; /* Set the color of the heading to black */
+  font-weight: bold; /* Make the text bold */
+  text-decoration: underline; /* Add an underline to the text */
+}
+
+
+
+/* Footer */
+.footer-bg {
+    background: linear-gradient(135deg, #333, #555);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-bg a {
+    color: #00aaff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bg a:hover {
+    color: #ffffff;
+}
+
+/* Animations */
+.profile-img {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.card {
+    animation: slideUp 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
